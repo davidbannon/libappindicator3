@@ -23,6 +23,10 @@ However, it is possible to install libappindicator3-1 from the deb available her
 
 
 
+Note I have made absolutly no changes to the library code, just played with the packaging.
+
+
+
 **Installation**
 --------
 
@@ -35,11 +39,17 @@ Download the library deb file from release directory, install it with something 
 
 
 
-And then logout and backing again (to restart the desktop) and then enable the plugin using (for example) gnome-tweaks, "extensions", "Ubuntu appindicators". 
+And then logout and backing again (to restart the desktop) and then enable the plugin, doing one of 
+
+* If you use tomboy-ng, it will offer to 'enable' the plugin when it next you start tomboy-ng up. Click 'yes'.
+
+* Use gnome-tweaks, a GUI app, "extensions", "Ubuntu appindicators"
+
+* Use the gnome-extensions command.  
 
 
 
-You will now find apps like https://github.com/tomboy-notes/tomboy-ng will show you a nice convenient SysTray Icon.
+You will now find apps like https://github.com/tomboy-notes/tomboy-ng will now show you a nice convenient SysTray Icon.
 
 
 

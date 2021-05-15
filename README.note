@@ -11,7 +11,9 @@ It may also be of help, but has not been tested with some other Debian derived d
  
 "Why ?" - If you want to use a traditional <bold>SysTray</bold> (such as tomboy-ng) app on Debian Gnome Bullseye, well, bad luck, the only way to get that SysTray Icon visible is to use Ubuntu's gnome-shell-extension-appindicator plugin. And that plugin needs libappindicator3-1 which, early in 2021, Debian decided to drop as they had no maintainer for it. The plugin is still there but not the library.
 
-However, it is possible to install libappindicator3-1 from the deb available here, this deb has an added dependency on gnome-shell-extension-appindicator, reducing the install steps just a little.<size:large>
+However, it is possible to install libappindicator3-1 from the deb available here, this deb has an added dependency on gnome-shell-extension-appindicator, reducing the install steps just a little.
+
+Note I have made absolutly no changes to the library code, just played with the packaging.<size:large>
 
 <bold>Installation</bold></size:large>
 
@@ -19,9 +21,12 @@ Download the library deb file from release directory, install it with something 
 
 <monospace>sudo apt install ./libappindicator3-1_20.04-bullseye_amd64.deb</monospace>
 
-And then logout and backing again (to restart the desktop) and then enable the plugin using (for example) gnome-tweaks, "extensions", "Ubuntu appindicators". 
+And then logout and backing again (to restart the desktop) and then enable the plugin, doing one of 
+<list><list-item dir="ltr">If you use tomboy-ng, it will offer to 'enable' the plugin when it next you start tomboy-ng up. Click 'yes'.</list-item></list>
+<list><list-item dir="ltr">Use gnome-tweaks, a GUI app, "extensions", "Ubuntu appindicators"</list-item></list>
+<list><list-item dir="ltr">Use the gnome-extensions command.  </list-item></list>
 
-You will now find apps like https://github.com/tomboy-notes/tomboy-ng will show you a nice convenient SysTray Icon.<size:large>
+You will now find apps like https://github.com/tomboy-notes/tomboy-ng will now show you a nice convenient SysTray Icon.<size:large>
 
 <bold>Other Information</bold></size:large>
 This library is built from unaltered source from the Ubuntu 20.04 version of libappindicator3-1. The only change I have made is to add gnome-shell-extension-appindicator to save one install step. If you feel uncomfortable installing something like this from the Interweb thing (and you should be), you can easily build it yourself (instructions below) or even just copy the library binary and associated symlink from a Ubuntu 20.04 install.
@@ -60,14 +65,14 @@ Now, build the debs again, when finished, grab one that contains libappindicator
 
 <bold>Offered in the hope its useful, there are, and cannot be, any responsibility accepted nor guarantees it will solve all your problems !
 </bold></note-content></text>
-  <last-change-date>2021-05-06T19:00:19.2725455+10:00</last-change-date>
-  <last-metadata-change-date>2021-05-06T19:00:19.2725455+10:00</last-metadata-change-date>
+  <last-change-date>2021-05-15T22:25:04.7910481+10:00</last-change-date>
+  <last-metadata-change-date>2021-05-15T22:25:04.7910481+10:00</last-metadata-change-date>
   <create-date>2021-05-06T17:45:58.6449469+10:00</create-date>
   <cursor-position>1</cursor-position>
   <selection-bound-position>1</selection-bound-position>
-  <width>695</width>
-  <height>505</height>
-  <x>744</x>
-  <y>56</y>
+  <width>879</width>
+  <height>695</height>
+  <x>457</x>
+  <y>107</y>
   <open-on-startup>False</open-on-startup>
 </note>
