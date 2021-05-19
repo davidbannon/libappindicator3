@@ -7,7 +7,13 @@
 
 This repo contains a single library deb that may be useful for Debian Bullseye using Gnome. It provides the missing libappindicator3-1 and, incidentally, it will also pull in, from the normal Bullseye repo, gnome-shell-extension-appindicator.
 
-It may also be of help, but has not been tested with some other Debian derived distributions. Its not needed with Ubuntu or Fedora.
+<italic><bold>Stop Press</bold> - a better solution than using this repo is almost certainly to use libayatana-appindicator3-1. It appears to behave identicially to libappindicator3-1but of course has a different name. If you are a tomboy-ng user, update to a release of tomboy-ng greater than 0.32f, install gnome-shell-extension-appindicator and libayatana-appindicator3-1. Log out, back in again and start tomboy-ng, it will offer to enable the plugin, say 'yes'. You can enable or disable the plugin with gnome-tweaks.
+
+Remember, you must restart the desktop after installing the gnome-shell-extension-appindicator plugin !
+
+Users of other codes that depend on libappindicator need to seek action form their application builders. I wonder if creating a symlink from the ayatana library to the expected libappindicator3.so.1 would help ?</italic>
+
+Anyway, if you still want to use his repo, It may also be of help, but has not been tested with some other Debian derived distributions. Its not needed with Ubuntu or Fedora.
  
 "Why ?" - If you want to use a traditional <bold>SysTray</bold> (such as tomboy-ng) app on Debian Gnome Bullseye, well, bad luck, the only way to get that SysTray Icon visible is to use Ubuntu's gnome-shell-extension-appindicator plugin. And that plugin needs libappindicator3-1 which, early in 2021, Debian decided to drop as they had no maintainer for it. The plugin is still there but not the library.
 
@@ -65,14 +71,14 @@ Now, build the debs again, when finished, grab one that contains libappindicator
 
 <bold>Offered in the hope its useful, there are, and cannot be, any responsibility accepted nor guarantees it will solve all your problems !
 </bold></note-content></text>
-  <last-change-date>2021-05-15T22:25:04.7910481+10:00</last-change-date>
-  <last-metadata-change-date>2021-05-15T22:25:04.7910481+10:00</last-metadata-change-date>
+  <last-change-date>2021-05-19T14:22:29.2368316+10:00</last-change-date>
+  <last-metadata-change-date>2021-05-19T14:22:29.2368316+10:00</last-metadata-change-date>
   <create-date>2021-05-06T17:45:58.6449469+10:00</create-date>
   <cursor-position>1</cursor-position>
   <selection-bound-position>1</selection-bound-position>
   <width>879</width>
   <height>695</height>
-  <x>457</x>
-  <y>107</y>
+  <x>597</x>
+  <y>291</y>
   <open-on-startup>False</open-on-startup>
 </note>

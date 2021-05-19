@@ -11,7 +11,19 @@ This repo contains a single library deb that may be useful for Debian Bullseye u
 
 
 
-It may also be of help, but has not been tested with some other Debian derived distributions. Its not needed with Ubuntu or Fedora.
+***Stop Press** - a better solution than using this repo is almost certainly to use libayatana-appindicator3-1. It appears to behave identicially to libappindicator3-1but of course has a different name. If you are a tomboy-ng user, update to a release of tomboy-ng greater than 0.32f, install gnome-shell-extension-appindicator and libayatana-appindicator3-1. Log out, back in again and start tomboy-ng, it will offer to enable the plugin, say 'yes'. You can enable or disable the plugin with gnome-tweaks.*
+
+
+
+*Remember, you must restart the desktop after installing the gnome-shell-extension-appindicator plugin !*
+
+
+
+*Users of other codes that depend on libappindicator need to seek action form their application builders. I wonder if creating a symlink from the ayatana library to the expected libappindicator3.so.1 would help ?*
+
+
+
+Anyway, if you still want to use his repo, It may also be of help, but has not been tested with some other Debian derived distributions. Its not needed with Ubuntu or Fedora.
 
  
 
